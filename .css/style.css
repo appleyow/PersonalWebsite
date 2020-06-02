@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Piedra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap');
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Tenali Ramakrishna', sans-serif;
+	font-size: 20px;
+}
+/* Navigation css*/
+.nav-list {
+	list-style: none;
+	width: 150px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin-top: 15vh;
+		margin-right: 3.5vw;
+}
+.nav-list li {
+	background-color: #111;
+}
+.nav-list li a {
+	position: relative;
+	display: block;
+	padding-top: 35px;
+		padding-bottom: 35px;
+	text-decoration: none;
+	text-align: center;
+	color: #818181;
+	font-weight: 600;
+	font-size: 17px;
+}
+.nav-list li a:hover {
+	color: #f1f1f1;
+}
+.nav-list li.active a {
+	background: #22A39F;
+	color: #f1f1f1;
+}
+/*End of Navigation css */
+/*carousel size and attributes*/
+.carousel-container {
+	height: 100vh;
+	width: 100%
+}
+.carImg-size {
+	background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-attachment: fixed;
+}
+.top-name {
+	line-height: 50vh;
+	font-size: 5vw;
+	font-family: 'Caveat', cursive;
+}
+/*end of carousel size and attributes*/
+
+/*containers' sizes*/
+.outer-container {
+	min-height: 100vh;
+	width: 100%;
+}
+.inner-container {
+	padding-top: 10vh;
+		padding-bottom:  10vh;
+		padding-left: 20vw;
+		padding-right: 20vw;
+}
+.gray-container {
+	min-height: 100vh;
+	width: 100%;
+	background-color: #d9d9d9;
+}
+.contact-container {
+	min-height: 60vh;
+	width: 100%;
+}
+footer {
+	min-height: 40vh;
+	width: 100%;
+	background: #434242;
+}
+/*end of containers' sizes*/
+
+/*titles and subtitles attributes*/
+h2 {
+	font-size: 50px;
+	text-align: center;
+	font-weight: 300;
+	color: #22A39F;
+}
+h3 {
+	padding-top: 7vh;
+	font-weight: 300;
+	color: #22A39F;
+}
+/*end oftitles and subtitles attributes*/
+.profile-img {
+	border-radius: 50%;
+	margin-top: 7vh;
+}
+.verse {
+	margin-top: 5vh;
+}
+/*social media icon attributes*/
+.socMed-container a {
+	margin-top: 2.5cm;
+	margin-left: 1cm;
+	color: #434242;
+	background: #a6a6a6;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	font-size: 25px;
+	border-radius: 50%;
+
+}
+.socMed-container a:hover {
+	background: #f2f2f2;
+}
+.socMed-container .fa {
+	text-decoration: none;
+}
+/*end of social media icon attributes*/
+
+@media only screen and (max-width: 768px) {
+	.carousel-container {
+		height: 55vh;
+	}
+	.carousel-caption {
+		height: 55vh;
+	}
+	.top-name {
+	line-height:50vh;
+	font-size: 7vw;
+	font-family: 'Caveat', cursive;
+	}
+	.image-spacing {
+		margin-top: .5cm;
+	}
+	.nav-list {
+	display: none;
+	}
+}
